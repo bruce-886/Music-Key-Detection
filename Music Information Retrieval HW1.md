@@ -24,6 +24,7 @@
 ![](https://i.imgur.com/TgphWHH.png)
 
 圖片來源 https://www.kaggle.com/imsparsh/gtzan-genre-classification-deep-learning-val-92-4#Data-Visualization
+
 由各特徵之間相關係數圖可以得知mfcc_2的平均值對chromagram的平均值是有負相關的情形。由於mfcc_2是低頻強度的總和係數，因此對低頻強度高的聲音訊號，可能會有chromagram特徵不明顯的情況，導致誤判的情況。
 
 
@@ -53,7 +54,6 @@
 在進行調性預測時，常常因為高音諧波導致誤判，因此根據音樂調性理論建構加權評分機制以達到更好的評價標準。如下面的表格以及各調性分數對應表。
 ![](https://i.imgur.com/lDelKoR.png)
 
-<!-- ![](https://i.imgur.com/FnDLrMF.png) -->
 ![](https://i.imgur.com/jEqy7JC.png)
 
 
@@ -157,10 +157,10 @@
 和BPS-FH dataset做法一樣。對於不同參數下作圖、觀察後得到結果如下。
 
 * Weighting = "constant", Padding = "constant"
-![](https://i.imgur.com/HDAlgOu.png =600x300)
+![](https://i.imgur.com/HDAlgOu.png)
 
 * Weighting = "linear", Padding = "edge"
-![](https://i.imgur.com/5H9212k.png =600x300)
+![](https://i.imgur.com/5H9212k.png)
 
 
 * A_MAPS dataset local key detection result
@@ -181,9 +181,9 @@ Methodology :
 將chromagram上每30個frame的data加總在一起，形成一個12x40的矩陣，利用卷積神經網路做訓練，模型架構如圖。
 
 <!-- ![](https://i.imgur.com/cjntgpd.png) -->
-![](https://i.imgur.com/riItfBQ.png =700x300)
+![](https://i.imgur.com/riItfBQ.png)
 
-![](https://i.imgur.com/qQccVyL.png =600x400)
+![](https://i.imgur.com/qQccVyL.png)
 ```
     Test acc ~ 40%
     --------------------------
@@ -203,7 +203,7 @@ Methodology :
     Weighted acc : 49.05%
 ```
 
-![](https://i.imgur.com/V6YSLVl.png =600x400)
+![](https://i.imgur.com/V6YSLVl.png)
 
 ![](https://i.imgur.com/XAH47JK.png)
 
