@@ -110,9 +110,9 @@
 其中kernel權重可以有不同分布，如常數分布("constant")、線性分布("linear")或是指數分布("log")。
 對於超出原本長度的部分做了padding，邊界的padding設置了兩種模式，分別為補零("constant")與延續邊界("edge")。
 
-![](https://i.imgur.com/aBjBdcK.png =300x200)![](https://i.imgur.com/dC1G5f4.png =300x200)
+![](https://i.imgur.com/aBjBdcK.png)![](https://i.imgur.com/dC1G5f4.png)
 
-![](https://i.imgur.com/gvOTj4h.png =300x200)
+![](https://i.imgur.com/gvOTj4h.png)
 
 接著對於經過權重換算過後的特徵分別進行binary template matching 和 Krumhansl-Schmuckler’s method計算出預測結果。
 
@@ -121,16 +121,16 @@
 #### BPS-FH dataset:
 在此題中，將不同的segment size對準確率作圖。
 * Weighting = "constant", Padding = "constant"
-![](https://i.imgur.com/F89YtQs.png =600x300)
+![](https://i.imgur.com/F89YtQs.png)
 
 * Weighting = "linear", Padding = "constant"
-![](https://i.imgur.com/9KMUqY3.png =600x300)
+![](https://i.imgur.com/9KMUqY3.png)
 
 * Weighting = "linear", Padding = "edge"
-![](https://i.imgur.com/icWOlkm.png =600x300)
+![](https://i.imgur.com/icWOlkm.png)
 
 * Weighting = "log", Padding = "edge"
-![](https://i.imgur.com/dBCCZvj.png =600x300)
+![](https://i.imgur.com/dBCCZvj.png)
 
 可以觀察到大約在segment size=35附近可以得到不錯的效果，同時計算量也維持在較低的範圍。
 
