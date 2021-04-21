@@ -1,3 +1,3 @@
-# Key-detection
-HW1 from MIR in NTHU
+# Music-Key-Detection
+HW1 from MIR course in NTHU
 
